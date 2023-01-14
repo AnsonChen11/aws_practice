@@ -1,0 +1,19 @@
+.profile_pic_container{
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin: 10px 0 10px 0;
+    border-style: none;
+}
+img.profile_pic{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+img.article{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
