@@ -46,7 +46,6 @@ router.post("/", upload.single("file"), async(req,res) => {
         const sql = 'INSERT INTO userData (content, fileName) VALUES (?, ?)';
         const inserts = [content, fileName];
         const sqlWithInserts = mysql.format(sql, inserts);
-        console.log("sqlWithInserts", sqlWithInserts)
         connection.query(sqlWithInserts, (err, results) => {
                 if (err) throw err;
                 console.log("results", results);

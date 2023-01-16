@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const hbs = require("hbs");
-const portNum = 80;
+const portNum = 8080;
 const uploaderRouter = require("./router/uploader");
 
 
